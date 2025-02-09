@@ -1,5 +1,8 @@
 # 欢迎来到我的知识库
 
+[![Documentation Status](https://readthedocs.org/projects/etshaw-zh/badge/?version=latest)](https://etshaw-zh.readthedocs.io/zh-cn/latest/?badge=latest)
+[![lint](https://github.com/etShaw-zh/etShaw-zh/actions/workflows/lint.yml/badge.svg)](https://github.com/etShaw-zh/etShaw-zh/actions/workflows/lint.yml)
+
 ```{toctree}
 :maxdepth: 2
 :caption: 目录
