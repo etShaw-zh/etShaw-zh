@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-project = 'Personal Knowledge Base'
+project = '肖建军的个人知识库'
 copyright = f'2024-{__import__("datetime").datetime.now().year}, Jiaojian Xiao'
 author = 'Jiaojian Xiao'
 
