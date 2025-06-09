@@ -9,6 +9,7 @@
 - 📙 [AICodingAssistant-Pro](https://github.com/etShaw-zh/AICodingAssistant-Pro): An artificial intelligence text-coding officer with integrated classifiers.
 
 #### 📚 Contribute
+- 📘 [wordpress-mcp](https://github.com/Automattic/wordpress-mcp): Make your WordPress site into a simple MCP server, exposing functionality to LLMs and AI agents.
 - 📗 [HINA](https://github.com/SHF-NAILResearchGroup/HINA): A Learning Analytics Tool for Heterogenous Interaction Network Analysis in Python.
 - 📕 [RSSHub](https://github.com/DIYgod/RSSHub):  Everything is RSSible.
 - 📒 [zotero-plugins](https://github.com/zotero-chinese/zotero-plugins): Zotero Plugins Collection | Zotero 插件合集 | Awesome Zotero Plugins.
