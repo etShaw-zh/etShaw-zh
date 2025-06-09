@@ -5,7 +5,7 @@
 
 #### 📝 Projects
 - 📘 [gca_analyzer](https://github.com/etShaw-zh/gca_analyzer): A Python Package for Group Conversation Analysis.
-- 📗 [zotracer](https://github.com/etShaw-zh/zotracer): A zotero plugin that tracks your research activities, creates detailed timelines, and exports notes to platforms like Flomo.
+- 📗 [zotracer](https://github.com/etShaw-zh/zotracer): Tracks your research activities, creates detailed timelines, and exports notes to platforms like Flomo.
 - 📙 [AICodingAssistant-Pro](https://github.com/etShaw-zh/AICodingAssistant-Pro): An artificial intelligence text-coding officer with integrated classifiers.
 
 #### 📚 Contribute
