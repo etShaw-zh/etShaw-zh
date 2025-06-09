@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目最佳实践 &mdash; 肖建军的个人知识库  文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="项目初始化与规范" href="project-initialization.html" />
+    <link rel="prev" title="主题索引" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            肖建军的个人知识库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">主题索引</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">项目最佳实践</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="project-initialization.html">项目初始化与规范</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html">文档自动化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html#id7">数学公式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html#mermaid">Mermaid 图表</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci-cd.html">CI/CD 实践</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">为什么需要项目最佳实践？</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">章节概述</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">肖建军的个人知识库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">主题索引</a></li>
+      <li class="breadcrumb-item active">项目最佳实践</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/topics/best-practices/index.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>项目最佳实践<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>本章节将介绍如何从零开始构建一个规范的项目，包括项目初始化、文档自动化、测试、部署等最佳实践。</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project-initialization.html">项目初始化与规范</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project-initialization.html#id2">项目结构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-initialization.html#id3">版本控制最佳实践</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-initialization.html#id5">项目配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-initialization.html#id6">开发环境配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-initialization.html#id8">下一步</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">文档自动化</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html#sphinx">Sphinx 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html#readthedocs">ReadTheDocs 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html#id5">文档编写指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html#id7">数学公式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html#mermaid">Mermaid 图表</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html#id8">最佳实践</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html#id9">下一步</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ci-cd.html">CI/CD 实践</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#github-actions">GitHub Actions 基础</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id2">文档自动化部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id4">代码质量检查</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id6">自动发布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id8">最佳实践</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id9">工作流示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id11">安全最佳实践</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci-cd.html#id12">下一步</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id2">
+<h2>为什么需要项目最佳实践？<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>在开始一个新项目时，良好的项目结构和工程实践可以：</p>
+<ol class="arabic simple">
+<li><p>提高代码质量和可维护性</p></li>
+<li><p>降低团队协作成本</p></li>
+<li><p>加快开发和部署效率</p></li>
+<li><p>减少潜在的技术债务</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>章节概述<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="project-initialization.html"><span class="std std-doc">项目初始化与规范</span></a>：介绍如何创建一个结构良好的项目</p></li>
+<li><p><a class="reference internal" href="documentation.html"><span class="std std-doc">文档自动化</span></a>：使用 Sphinx 和 ReadTheDocs 构建文档系统</p></li>
+<li><p><a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD 实践</span></a>：使用 GitHub Actions 实现持续集成和部署</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../index.html" class="btn btn-neutral float-left" title="主题索引" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="project-initialization.html" class="btn btn-neutral float-right" title="项目初始化与规范" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024-2025, Jiaojian Xiao。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
