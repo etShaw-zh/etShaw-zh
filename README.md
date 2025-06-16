@@ -23,3 +23,4 @@
 - ❤️ 爱发电: <a href="https://afdian.com/a/etShaw-zh" target="_blank">etShaw-zh</a>
 - ☕ ko-fi: <a href="https://ko-fi.com/etshaw" target="_blank">etShaw-zh</a>
 
+![My github stats](https://github-readme-stats.vercel.app/api?username=etshaw-zh&show_icons=true&hide_border=true&theme=dark)
