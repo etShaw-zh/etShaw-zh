@@ -15,12 +15,6 @@
 - 📒 [zotero-plugins](https://github.com/zotero-chinese/zotero-plugins): Zotero Plugins Collection | Zotero 插件合集 | Awesome Zotero Plugins.
 
 #### 👋 Contact
-
-- 🎥 Video: <a href="https://space.bilibili.com/381243118" target="_blank">B站_肖同学</a>
 - 📧 Email: <a href="mailto:et_shaw@126.com" target="_blank">et_shaw@126.com</a>
-
-#### 🥰 Support
-- ❤️ 爱发电: <a href="https://afdian.com/a/etShaw-zh" target="_blank">etShaw-zh</a>
-- ☕ ko-fi: <a href="https://ko-fi.com/etshaw" target="_blank">etShaw-zh</a>
 
 ![My github stats](https://github-readme-stats.vercel.app/api?username=etshaw-zh&show_icons=true&hide_border=true&theme=dark)
