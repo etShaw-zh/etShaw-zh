@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目初始化与规范 &mdash; 肖建军的个人知识库  文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="文档自动化" href="documentation.html" />
+    <link rel="prev" title="项目最佳实践" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            肖建军的个人知识库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">主题索引</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">项目最佳实践</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">项目初始化与规范</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">项目结构</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">版本控制最佳实践</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">项目配置文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">开发环境配置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">下一步</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html">文档自动化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html#id7">数学公式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation.html#mermaid">Mermaid 图表</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci-cd.html">CI/CD 实践</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">为什么需要项目最佳实践？</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">章节概述</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">肖建军的个人知识库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">主题索引</a></li>
+          <li class="breadcrumb-item"><a href="index.html">项目最佳实践</a></li>
+      <li class="breadcrumb-item active">项目初始化与规范</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/topics/best-practices/project-initialization.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>项目初始化与规范<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>本文将介绍如何规范地初始化一个项目，包括项目结构、配置文件、版本控制等内容。</p>
+<section id="id2">
+<h2>项目结构<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>一个规范的项目结构应该包含以下基本元素：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>project/
+├── .github/                    # GitHub 相关配置
+│   └── workflows/             # GitHub Actions 工作流配置
+├── docs/                      # 项目文档
+│   ├── _static/              # 静态文件
+│   ├── conf.py               # Sphinx 配置
+│   └── index.md              # 文档首页
+├── .gitignore                # Git 忽略文件
+├── LICENSE                   # 开源许可证
+└── README.md                 # 项目说明
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>版本控制最佳实践<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>分支管理<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>推荐使用以下分支策略：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">main</span></code>: 主分支，保持稳定</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">develop</span></code>: 开发分支</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">feature/*</span></code>: 特性分支</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hotfix/*</span></code>: 紧急修复分支</p></li>
+</ul>
+</section>
+<section id="git">
+<h3>Git 提交规范<a class="headerlink" href="#git" title="Link to this heading"></a></h3>
+<p>采用 <a class="reference external" href="https://www.conventionalcommits.org/">Conventional Commits</a> 规范：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="p">):</span> <span class="o">&lt;</span><span class="n">description</span><span class="o">&gt;</span>
+
+<span class="p">[</span><span class="n">optional</span> <span class="n">body</span><span class="p">]</span>
+
+<span class="p">[</span><span class="n">optional</span> <span class="n">footer</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>常用的 type：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feat</span></code>: 新功能</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fix</span></code>: 修复</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs</span></code>: 文档更新</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">style</span></code>: 代码格式</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">refactor</span></code>: 重构</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test</span></code>: 测试</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chore</span></code>: 构建过程或辅助工具的变动</p></li>
+</ul>
+</section>
+</section>
+<section id="id5">
+<h2>项目配置文件<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="gitignore">
+<h3>.gitignore<a class="headerlink" href="#gitignore" title="Link to this heading"></a></h3>
+<p>创建适当的 .gitignore 文件以排除不必要的文件：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Sphinx documentation
+docs/_build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+</pre></div>
+</div>
+</section>
+<section id="license">
+<h3>LICENSE<a class="headerlink" href="#license" title="Link to this heading"></a></h3>
+<p>选择合适的开源许可证，常见的选择包括：</p>
+<ul class="simple">
+<li><p>MIT License：最宽松的许可证之一</p></li>
+<li><p>Apache License 2.0：包含专利授权条款</p></li>
+<li><p>GNU GPL：要求衍生作品必须开源</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2>开发环境配置<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="python">
+<h3>Python 项目<a class="headerlink" href="#python" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>使用 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 和 <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> 管理项目元数据和依赖</p></li>
+<li><p>使用 <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> 或 <code class="docutils literal notranslate"><span class="pre">Pipfile</span></code> 管理依赖</p></li>
+<li><p>配置 <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> 钩子进行代码质量检查</p></li>
+</ol>
+</section>
+<section id="id7">
+<h3>编辑器配置<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>创建 <code class="docutils literal notranslate"><span class="pre">.editorconfig</span></code> 文件统一代码风格：</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+
+<span class="k">[*]</span>
+<span class="na">charset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">utf-8</span>
+<span class="na">end_of_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lf</span>
+<span class="na">indent_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">space</span>
+<span class="na">indent_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">4</span>
+<span class="na">insert_final_newline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<span class="na">trim_trailing_whitespace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+
+<span class="k">[*.{json,yml,yaml,html,css,js}]</span>
+<span class="na">indent_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">2</span>
+
+<span class="k">[Makefile]</span>
+<span class="na">indent_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">tab</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id8">
+<h2>下一步<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="documentation.html"><span class="std std-doc">文档自动化</span></a>：了解如何使用 Sphinx 和 ReadTheDocs 构建文档</p></li>
+<li><p><a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD 实践</span></a>：配置 GitHub Actions 实现自动化工作流</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="项目最佳实践" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="documentation.html" class="btn btn-neutral float-right" title="文档自动化" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024-2025, Jiaojian Xiao。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
